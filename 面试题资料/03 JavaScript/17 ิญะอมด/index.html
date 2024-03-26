@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function Fun(){
+	//this.run = '1'
+}	
+//Fun.prototype.run = '2'
+
+var obj = new Fun();
+//obj.run = '3';
+//obj.__proto__.run = '4'
+
+Object.prototype.run = '5';
+
+// console.log( Fun.prototype , obj.__proto__ )
+
+console.log( obj.__proto__.__proto__.__proto__  );
+
+
+</script>
+</body>
+</html>

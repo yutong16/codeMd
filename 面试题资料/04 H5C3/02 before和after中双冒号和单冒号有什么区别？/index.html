@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	/*div:before{
+		content: 'a';
+	}
+	div::after{
+		content: 'b';
+	}*/
+	ul{
+		border:5px solid #ccc;
+	}
+	ul li{
+		float:left;
+		width: 100px;
+		height: 100px;
+		background: red;
+	}
+	ul:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.box{
+		line-height: 100px;
+		text-align: center;
+		border:10px solid #ccc;
+	}
+	.box span{
+		position: relative;
+	}
+	.box span:before{
+		content:'';
+		position: absolute;
+		left:-30px;
+		top:50%;
+		margin-top:-5px;
+		width: 10px;
+		height: 10px;
+		background: red;
+		border-radius: 100%;
+	}
+	.box span:after{
+		content:'';
+		position: absolute;
+		right:-30px;
+		top:50%;
+		margin-top:-5px;
+		width: 10px;
+		height: 10px;
+		background: red;
+		border-radius: 100%;
+	}
+	</style>
+</head>
+<body>
+
+<div>1111</div>
+
+<ul>
+	<li>111</li>
+	<li>111</li>
+	<li>111</li>
+	<li>111</li>
+</ul>
+
+<div class='box'>
+	<span>推荐</span>
+</div>
+
+</body>
+</html>

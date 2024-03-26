@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<button id='btn'>1111</button>
+<h1 id='h1s'>2222</h1>
+
+<script type="text/javascript">
+
+var str = '你好';
+var obj = {str:'这是obj对象内的str'}
+function fun( name, age ){
+	this.name = name;
+	this.age = age;
+	console.log( this , this.str );
+}
+
+//fun.call( obj ); //call立即执行
+//fun.apply( obj ); //apply立即执行
+//fun.bind( obj );  //bind不会立即执行，因为bind返回的是函数
+
+//fun.call(obj,'张三',88); 
+//fun.apply(obj,['张三',88]); 
+//fun.bind(obj,'张三',88)(); 
+
+
+//fun();
+
+
+
+// var arr1 = [1,2,4,5,7,3,321];
+// console.log( Math.max.apply(null,arr1) )
+
+
+var btn = document.getElementById('btn');
+var h1s = document.getElementById('h1s');
+btn.onclick = function(){
+	console.log( this.id );
+}.bind(h1s)
+
+</script>
+</body>
+</html>

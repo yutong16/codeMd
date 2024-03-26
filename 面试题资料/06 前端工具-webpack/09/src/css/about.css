@@ -1,0 +1,54 @@
+/**
+ * @name: about.css
+ * @description: 关于我们页面样式表
+ * @author: 干将
+ * @update: 2015-05-25 0:0:00;
+ */
+@import url('./header.css');
+.lecturer{
+	position: absolute;
+	left:0;
+	right: 0;
+	top:50%;
+	margin:-250px auto 0px;
+	width: 100%;
+	color:#fff;
+}
+.lecturer ul{
+	margin: 0 50px;
+}
+.lecturer ul li{
+	position: relative;
+	padding: 45px 62px; 
+	background: url('../images/pic_balckbc.png') no-repeat;
+	background-size:100%;
+}
+.lecturer-img{
+	width:140px;
+	height: 160px;
+}
+.lecturer-img img{
+	width:100%;
+	height: 100%;
+	border-radius: 12px;
+}
+.lecturer-txt{
+	position: absolute;
+	left: 0;
+	padding:0 50px 0 250px;
+}
+.lecturer-txt h2{
+	font-size:30px;
+}
+.lecturer-txt p{
+	font-size:16px;
+}
+.lecturer-txt .lecturer-it{
+	margin-top:16px;
+	margin-bottom:20px;
+	font-size:18px;
+	color:#FFE12B;
+}
+
+
+

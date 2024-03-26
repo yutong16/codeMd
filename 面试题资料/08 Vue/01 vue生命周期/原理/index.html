@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<div id='app'></div>
+
+<script type="text/javascript" src='vue.js'></script>
+<script type="text/javascript">
+new Vue({
+  el:"#app",
+  data : {
+  	str:'123'
+  },
+  beforeCreate(){
+  	console.log('beforeCreate',this.$el , this.$data)
+  },
+  created(){
+  	console.log('created',this.$el , this.$data)
+  },
+  beforeMount(){
+  	console.log('beforeMount',this.$el , this.$data)
+  },
+  mounted(){
+  	console.log('mounted',this.$el , this.$data)
+  },
+})
+</script>
+</body>
+</html>

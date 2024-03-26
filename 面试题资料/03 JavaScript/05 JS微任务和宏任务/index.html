@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id='box1'>1111</div>
+<div id='box2'>1111</div>
+<div id='box3'>1111</div>
+<div id='box4'>1111</div>
+
+<script type="text/javascript">
+// var box = document.getElementById('box');
+// box1.onclick = function(){
+// 	alert(11111);
+// }
+// box2.onclick = function(){
+// 	alert(11111);
+// }
+// box3.onclick = function(){
+// 	alert(11111);
+// }
+// box4.onclick = function(){
+// 	alert(11111);
+// }
+// console.log(22222);
+// for(var i=0;i<3;i++){
+// 	setTimeout(function(){
+// 		console.log(i);
+// 	},0);
+// }
+
+// console.log(22222);
+
+setTimeout(function(){
+	console.log('1');
+})
+
+new Promise((resolve)=>{
+	console.log( '1 promise 1'); //同步
+	resolve();
+}).then(()=>{
+	console.log('微1')
+}).then(()=>{
+	console.log('微2')
+})
+
+console.log(2);//同步
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/**
+ * @name: student.css
+ * @description: 就业学员样式表
+ * @author: 干将
+ * @update: 2015-05-25 0:0:00;
+ */
+@import url('./header.css');
+.student{
+	position: absolute;
+	left:0;
+	right:0;
+	top:50%;
+	margin:-227px auto 0;
+	color:#fff;
+}
+.student-wrap{
+	position: relative;
+	margin:0 auto;
+	width: 1278px;
+	overflow: hidden;
+}
+.student-select ul + ul{
+	margin-left:20px;
+}
+.student-select{
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 2;
+}
+.student-select ul{
+	width:174px;
+	background: #037DFB;
+	border-radius: 24px;
+	cursor: pointer;
+}
+.student-select ul li{
+	margin:0 20px;
+	text-align: center;
+	line-height: 40px;
+}
+.student-select ul li.active{
+	background: url('../images/icon_jiantou.png') no-repeat right;
+}
+.student-select ul li + li{
+	border-top:1px solid #fff;
+}
+.student-select ul li.no-border{
+	border:none;
+}
+
+.student-list{
+	margin-top:98px;
+}
+.student-list > li{
+	float: left;
+	width: 260px;
+	height: 120px;
+	padding:20px;
+	margin-right: 18px;
+	margin-bottom:18px;
+	background: rgba(0,0,0,.3);
+	border-radius: 12px;
+}
+
+.student-list > li > div{
+	width:100px;
+	height: 120px;
+}
+.student-list > li img{
+	width:100%;
+	height: 100%;
+	border-radius: 12px;
+}
+
+.student-list > li > ul{
+	margin-left:50px;
+}
+
+.student-list > li > ul > li{
+	font-size: 14px;
+}
+.student-list > li > ul > li + li{
+	margin-top:5px;
+}
+/* 显示隐藏的操作类 */
+.hide{
+	display: none;
+}
+
+

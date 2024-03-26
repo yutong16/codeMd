@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var arr1 = [1,2,3,2,4,1];
+console.log( Array.from( new Set(arr1) ) );
+console.log( [...new Set(arr1)] );
+function unique(arr){
+	return [...new Set(arr)]
+}
+console.log(  unique(arr1) );
+
+var arr2 = [1,2,3,2,4,1];
+function unique( arr ){
+	var brr = [];
+	for( var i=0;i<arr.length;i++){
+		if(  brr.indexOf(arr[i]) == -1 ){
+			brr.push( arr[i] );
+		}
+	}
+	return brr;
+}
+console.log( unique(arr2) );
+
+
+var arr3 = [1,2,3,2,4,1];
+function unique( arr ){
+	
+	arr = arr.sort();
+	var brr = [];
+	for(var i=0;i<arr.length;i++){
+		if( arr[i] !== arr[i-1]){
+			brr.push( arr[i] );
+		}
+	}
+	return brr;
+
+}
+console.log( unique(arr3) );
+</script>
+
+</body>
+</html>

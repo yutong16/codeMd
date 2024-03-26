@@ -1,0 +1,16 @@
+1. 克隆下载代码
+2. 配置
+
+	git config user.name '用户名'
+	git config user.email '邮箱'
+3. git add .
+4. git commit -m '注释内容'
+5. git push ==》 可能会报错
+6. git push为什么报错？
+
+	如果远程仓库有人更新了代码，那么我们不能直接的去git push。
+
+	解决：我们必须先把远程仓库的代码下拉，然后再push
+
+		6.1 git pull
+		6.2 git push

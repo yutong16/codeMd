@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+//头条考题
+var o = {
+	a:10,
+	b:{
+		a:2,
+		fn:function(){
+			console.log( this.a ); // 2
+			console.log( this );   //代表b对象
+		}
+	}
+}
+o.b.fn();
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	ul{
+		list-style: none;
+	}
+	ul li{
+		display: inline-block;
+		width: 260px;
+		background: red;
+	}
+	@media only screen and (max-width: 1000px){
+		ul li:last-child{
+			display: none;
+		}
+	}
+	@media only screen and (max-width: 700px){
+		ul li:nth-child(3){
+			display: none;
+		}
+		ul li:nth-child(4){
+			display: none;
+		}
+	}
+	</style>
+</head>
+<body>
+
+
+<ul>
+	<li>首页</li>
+	<li>案例</li>
+	<li>课程</li>
+	<li>就业</li>
+	<li>关于</li>
+</ul>
+
+
+<picture>
+	<source srcset="1.jpg" media='(min-width:1000px)'>
+	<source srcset="2.jpg" media='(min-width:700px)'>
+	<img srcset="3.jpg">
+</picture>
+
+
+</body>
+</html>

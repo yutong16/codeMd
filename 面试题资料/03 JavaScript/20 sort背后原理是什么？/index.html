@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var arr1 = [12,11,1,23,'45','34',21,'b','a','ab','bc'];
+console.log( arr1.sort() );
+
+var arr2 = [12,111,11,1,23,'45','34',21];
+var arr3 = arr2.sort(function( a, b ){
+	return b-a;
+})
+console.log( arr3 );
+
+var arr4 = [
+	{name:'zhangsan',age:18},
+	{name:'lisi',age:2},
+	{name:'wangwu',age:50},
+];
+
+function compare(age){
+	return function(a,b){
+		var val1 = a[age];
+		var val2 = b[age];
+		return val2 - val1;
+	}
+}
+
+var arr5 = arr4.sort(compare('age'));
+
+console.log(  arr5  );
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var str = '你好';
+
+var arr = [1,2,3];
+console.log( Array.isArray( arr ) );
+console.log( arr instanceof Array );
+console.log( Object.prototype.toString.call(arr).indexOf('Array') > -1 );
+console.log(  Array.prototype.isPrototypeOf(arr) )
+console.log(  arr.constructor.toString().indexOf('Array') > -1 )
+
+</script>
+
+</body>
+</html>

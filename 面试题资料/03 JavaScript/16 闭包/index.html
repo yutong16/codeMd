@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<ul>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+</ul>
+
+<script type="text/javascript">
+
+
+// function fun(){
+// 	var a = 10;
+// 	return function(){
+// 		console.log( a );
+// 	}
+// }
+// fun()()
+
+var lis = document.getElementsByTagName('li');
+for(var i=0;i<lis.length;i++){
+	(function(i){
+		lis[i].onclick = function(){
+			alert(i);
+		}
+		lis[i] = null;
+	})(i)
+}
+
+
+</script>
+
+</body>
+</html>

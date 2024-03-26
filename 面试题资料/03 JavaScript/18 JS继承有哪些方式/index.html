@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+//方式1
+// class Parent{
+// 	constructor(){
+// 		this.age = 18;
+// 	}
+// }
+
+// class Child extends Parent{
+// 	constructor(){
+// 		super();
+// 		this.name = '张三';
+// 	}
+// }
+// let o1 = new Child();
+// console.log( o1,o1.name,o1.age );
+
+//方式2
+// function Parent(){
+// 	this.age = 20;
+// }
+// function Child(){
+// 	this.name = '张三'
+// }
+// Child.prototype = new Parent();
+// let o2 = new Child();
+// console.log( o2,o2.name,o2.age );
+
+
+//方式3
+// function Parent(){
+// 	this.age = 22;
+// }
+// function Child(){
+// 	this.name = '张三'
+// 	Parent.call(this);
+// }
+// let o3 = new Child();
+// console.log( o3,o3.name,o3.age );
+
+
+//方式4
+function Parent(){
+	this.age = 100;
+}
+function Child(){
+	Parent.call(this);
+	this.name = '张三'
+}
+Child.prototype = new Parent();
+let o4 = new Child();
+console.log( o4,o4.name,o4.age );
+</script>
+
+</body>
+</html>

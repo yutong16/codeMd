@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var o = {
+	b:'bbbbbb'
+}
+
+var obj1 = {
+	a:1,
+	'张三':'你好'
+}
+
+obj1[o] = '123';
+
+for( var k in obj1 ){
+	console.log( typeof k );
+}
+
+
+
+var a = {}
+var b = {
+	key:'a'
+}
+var c = {
+	key:'c'
+}
+
+a[b] = '123';
+a[c] = '456';
+
+console.log( a[b] ); // 456
+
+for(var k in a){
+	console.log( typeof k )
+}
+
+
+</script>
+
+</body>
+</html>

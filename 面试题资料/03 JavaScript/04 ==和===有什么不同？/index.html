@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+console.log( 1 == '1' );
+console.log( true == 1 );
+console.log( null == undefined );
+console.log( [1,2] == '1,2' );
+
+var s = '2';
+if( s == 2 ){
+	console.log( typeof s );
+}
+
+Object.prototype.valueOf = function(){
+	alert(123);
+}
+var arr = [1,2];
+var str = '1,2';
+console.log( arr == str );
+
+
+</script>
+</body>
+</html>

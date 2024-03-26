@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	.container{
+		width: 1rem;
+		height: 1rem;
+		font-size: 1rem;
+		background: red;
+	}
+	</style>
+	<!-- <script type="text/javascript" src='flexible.js'></script> -->
+	
+</head>
+<body>
+
+<div class='container'> 1111 </div>
+
+<script type="text/javascript">
+
+function flexible(){
+
+	let doc = document.documentElement;
+	let w = doc.clientWidth/10;
+	doc.style.fontSize = w+'px';
+
+}
+flexible();
+
+
+window.onresize = function(){
+
+	flexible()
+
+}
+
+
+</script>
+</body>
+</html>

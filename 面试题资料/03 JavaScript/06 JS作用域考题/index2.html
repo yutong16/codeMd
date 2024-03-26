@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">//var a;
+var name = 'a';
+(function(){//var name;
+
+	if( typeof name == 'undefined' ){
+		var name = 'b';
+		console.log('111'+name);
+	}else{
+		console.log('222'+name);
+	}
+
+})()
+
+console.log( a );
+if( false ){
+	var a = 10;
+}
+console.log( a );
+
+var bar = 1;
+function test(){
+	console.log( bar );//undefined
+	var bar = 2;
+	console.log( bar );//2
+}
+test();
+</script>
+</body>
+</html>

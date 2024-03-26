@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+// function Array(){
+
+// }
+// new Array 
+
+// console.log( [1,2,3].constructor )
+
+
+//1. 每一个函数都自带一个prototype【原型】。
+//	注意：对象拥有__proto__
+//2. new Fun 该Fun构造函数的原型指向于对象(new Fun)的原型
+
+function Fun(){
+	//this.a = '在Fun函数中添加的';
+}
+Fun.prototype.a = '这是Fun原型添加的';
+let obj = new Fun();
+//obj.a = '对象本身';
+//obj.__proto__.a = '这是对象原型添加的';
+
+//Object.prototype.a = '这是Object添加的'
+console.log(obj.a);
+
+//console.log( Fun.prototype == obj.__proto__ );
+
+
+</script>
+
+</body>
+</html>

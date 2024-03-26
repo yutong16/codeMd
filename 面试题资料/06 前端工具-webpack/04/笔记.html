@@ -1,0 +1,27 @@
+一、loader是什么
+
+	webpack 只能理解 JavaScript 和 JSON 文件，这是 webpack 开箱可用的自带能力。loader 让 webpack 能够去处理其他类型的文件，并将它们转换为有效 模块，以供应用程序使用，以及被添加到依赖图中。
+
+二、loader的配置
+	
+	写法：
+		module: {
+		    rules: [{ 
+		    	test: /\.css$/, 
+		    	use: ['style-loader','css-loader']
+			}]
+		}
+
+	1、test 属性，识别出哪些文件会被转换。
+
+	2、use 属性，定义出在进行转换时，应该使用哪个 loader。
+
+	****一定要记住下载loader
+
+
+
+
+
+
+
+	

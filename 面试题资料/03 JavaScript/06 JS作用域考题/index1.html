@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+// (function(){
+// 	var a = b = 10; 
+// })()
+
+// console.log( b );
+
+
+// function fun(){//var str; 你看不到的，是js独有的机制
+
+// 	console.log( str );
+// 	var str = '你好吗';
+// 	console.log( str );
+
+// }
+
+// fun();
+
+
+
+
+
+function c(){
+	var b = 1;
+	function a(){
+		console.log( b );//undefined
+		var b = 2;
+		console.log( b );//2
+	}
+	a();
+	console.log( b );//1
+}
+c();
+
+
+
+</script>
+
+</body>
+</html>

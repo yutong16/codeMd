@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var str = 'aaabbbbbccddddddddddx';
+var obj = {};
+for(var i=0;i<str.length;i++){
+	var char = str.charAt(i);
+	if( obj[char] ){
+		obj[char]++;
+	}else{
+		obj[char] = 1;
+	}
+}
+console.log( obj );
+//统计出来最大值
+var max = 0;
+for( var key in obj ){
+	if( max < obj[key] ){
+		max = obj[key];
+	}
+}
+//拿最大值去对比
+for( var key in obj ){
+	if( obj[key] == max ){
+		console.log('最多的字符是'+key);
+		console.log('出现的次数是'+max);
+	}
+}
+
+
+
+</script>
+
+</body>
+</html>

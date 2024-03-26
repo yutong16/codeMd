@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+var obj1 = {
+	a:'hellow'
+}
+var obj2 = obj1;
+
+obj2.a = 'world';
+
+console.log(obj1); //{a:world}
+
+(function(){
+
+	console.log(a); //undefined
+
+	var a = 1;
+
+})();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<div id='app'>
+	
+	<h1> {{   str  }} </h1>
+	{{   str  }}
+	<p>{{b}}</p>
+	<button @click='btn'>按钮</button>
+
+	<input type="" name="" v-model='str'>
+
+</div>
+
+
+<script type="text/javascript" src='vue.js'></script>
+<script type="text/javascript">
+new Vue({
+	el:'#app',
+	data : {
+		str:'你好',
+		b:'这也是data的数据'
+	},
+	beforeCreate(){
+	    console.log(  'beforeCreate' ,this.$el,this.$data )
+	},
+	created(){
+	    console.log(  'created',this.$el,this.$data  )
+	},
+	beforeMount(){
+	    console.log(  'beforeMount' ,this.$el,this.$data )
+	},
+	mounted(){
+	    console.log(  'mounted' ,this.$el,this.$data)
+	},
+	methods:{
+		btn(){
+			this.str = '不好啦啦啦';
+			console.log(  this.str  , this );
+		}
+	}
+})
+</script>
+</body>
+</html>

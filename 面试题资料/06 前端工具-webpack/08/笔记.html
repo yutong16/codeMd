@@ -1,0 +1,27 @@
+压缩打包css
+
+	1. 单独抽离css文件
+
+		1.1 下载插件： mini-css-extract-plugin
+
+		1.2 引入插件：
+
+			var MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+		1.3 修改loader：
+
+			{ 
+		    	test: /\.css$/, 
+		    	use: [MiniCssExtractPlugin.loader,'css-loader']
+			}
+		1.4 使用插件
+
+			plugins:[
+				new MiniCssExtractPlugin()
+			]
+
+	2. 压缩css文件
+
+		插件： optimize-css-assets-webpack-plugin
+		
+

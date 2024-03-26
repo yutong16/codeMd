@@ -1,0 +1,19 @@
+一、加载图片的loader ==> file-loader
+
+	{
+	    test: /\.(png|jpg|jpeg|gif)$/, 
+	    use: [{
+	        loader:'file-loader',
+	        options:{
+	          esModule:false,
+	          outputPath:'img/'
+	        }
+	    }]
+	}
+
+二、让html支持图片的loader  ==>  html-withimg-loader
+
+	{
+        test: /\.html$/, 
+        use: 'html-withimg-loader'
+    }
